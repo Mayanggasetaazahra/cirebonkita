@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-heading: 'Bricolage Grotesque', sans-serif; /* Untuk H1, H2, H3, Title Banner */
+  --font-body: 'Plus Jakarta Sans', sans-serif; /* Untuk Body, Nav, Card, Form */
+  --color-text-main: #0B192C; /* Deep Navy Dark */
+}
+
+h1, h2, h3, .hero-title, .font-heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+h1, .hero-title {
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+body, p, span, button, input, select, textarea, nav, .card {
+  font-family: var(--font-body);
+}
+
+body {
+  color: var(--color-text-main);
+  line-height: 1.6;
+}

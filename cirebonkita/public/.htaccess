@@ -1,0 +1,19 @@
+# ====================================================================
+# APACHE URL REWRITE CONFIGURATION (.htaccess)
+# ====================================================================
+# Proyek  : CirebonKita - Portal Desa Wisata Mandiri Cirebon
+# Kelompok: 5 (Smart Tourism Sektor Pariwisata Daerah)
+# 
+# Mengarahkan seluruh URL bersih (clean URL seperti /wisata, /umkm, /admin)
+# ke index.php?url=$1 tanpa mengganggu file aset statis (CSS, JS, Gambar).
+# ====================================================================
+
+Options -Multiviews
+RewriteEngine On
+
+# Jika request mengarah ke file atau direktori fisik yang ada di public/, layani langsung
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Teruskan parameter path ke index.php via query string 'url'
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

@@ -1,0 +1,6 @@
+{
+  "name": "CirebonKita - Portal Desa Wisata Mandiri Cirebon",
+  "description": "Portal Smart Tourism dan Desa Wisata Mandiri Cirebon berbasis Native PHP MVC & MySQL PDO untuk Kelompok 5.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
